@@ -11,10 +11,6 @@ body {
     line-height: 1.5;
     font-size: 1.6rem;
 }
-#fullpage .section1 {
-    width: 100%;
-    height: 100vh;
-}
 .bg {
     border: 1px solid blue;
     width: 100%;
@@ -28,19 +24,20 @@ body {
 }
 .header .gnb {
     width: 100%; 
-    height: 100px;
+    height: 70px;
     z-index: 999;
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
+    background-color: #fff;
 }
 #fullpage .header .gnb li a { 
     display: block;
     padding: 30px 25px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -53,6 +50,8 @@ body {
     font-weight: 700;
     letter-spacing: -1px;
 }
+
+
 /* section2 시작 */
 .section2 {
     background-color: aliceblue;
@@ -114,6 +113,7 @@ body {
     font-size: 3rem;
 font-weight: 700;
 text-align: center;
+padding-bottom: 50px;
 
 }
 .section3 .project_info {
@@ -125,7 +125,7 @@ text-align: center;
 }
 
 .section3 .project_info .project_thumbnail {
-    width: 30%;
+    width: 400px;
     margin-right: 50px;
 }
 .section3 .project_info .project_thumbnail img { 
@@ -159,4 +159,31 @@ text-align: center;
 .section3 .project_txt .button .btn_more:hover {
     background-color :cadetblue;
     color: #fff;
+}
+
+
+
+/* section4 시작 */
+.section4 { 
+    border: 1px solid red;
+}
+.section4 .design h2{ 
+    font-size: 3rem;
+font-weight: 700;
+text-align: center;
+padding-bottom: 50px;
+}
+
+.section4 .design_list ul{
+    border: 1px solid blue;
+}
+.section4 .design_list ul li  {
+    float: left;
+    margin-right: 10px;
+    width: calc((100% - 500px ) / 3);
+    border: 1px solid red;
+}
+
+.section4 .design_list ul li a img {
+    width: 100%;
 }
