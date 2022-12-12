@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+html {
+    font-size: 62.5%;
+    /* 기본폰트 10px 설정 */
+}
+
+body {
+    color: #000;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+#fullpage .section1 {
+    width: 100%;
+    height: 100vh;
+}
+.bg {
+    border: 1px solid blue;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    text-align: center;
+}
+.bg video {
+    width: 100%;
+    display: block;
+}
+.header .gnb {
+    width: 100%; 
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+#fullpage .header .gnb li a { 
+    display: block;
+    padding: 30px 25px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#fullpage .section1 .intro_txt {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+/* section2 시작 */
+.section2 {
+    background-color: aliceblue;
+}
+.section2 .profile .profile_img { 
+    width: 20%;
+    border: 1px solid red;
+    border-radius: 50%;
+    overflow: hidden;    
+    margin: 0 auto 50px;
+}
+.section2 .profile .profile_img img {
+    width: 100%;
+
+}
+.section2 .profile_text { 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.section2 .profile_text ul li {
+    position: relative;
+}
+.section2 .profile_text ul li span.title{ 
+    font-size: 1.6rem;
+
+    font-weight: 700;
+}
+.section2 .profile_text ul li span.desc {
+    position: absolute;
+    padding: 5px 0;
+    width: 200px;
+    left: 50px;
+    top: 0;
+}
+.section2 .profile_text ul li:not(span) {
+    font-size: 1.2rem;
+    padding: 5px 0;
+} 
+.section2 .profile_text .certificate {
+    padding-left: 20px;
+}
+.section2 .profile_text .certificate::before  {
+    content: "";
+    position: absolute;
+    width: 8px;
+    left: 0;
+    top: 11px;
+    height: 8px;
+    background-color: #000;
+    display: block;
+}
+
+/* section3 시작 */
+.section3 {
+    border: 1px solid red;
+}
+.section3 .project h2{ 
+    font-size: 3rem;
+font-weight: 700;
+text-align: center;
+
+}
+.section3 .project_info {
+    border: 1px solid rebeccapurple;
+    background-color: rgba(112,144,036,0.3);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .project_info .project_thumbnail {
+    width: 30%;
+    margin-right: 50px;
+}
+.section3 .project_info .project_thumbnail img { 
+    width: 100%;
+    display: block;
+}
+
+.section3 .project_txt ul li {
+    font-weight: 700;
+    position: relative;
+    margin: 10px 0;
+}
+.section3 .project_txt ul li span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: absolute;
+    width: 200px;
+    left: 150px;
+    top: 0;
+}
+
+.section3 .project_txt .button .btn_more{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: rgba(255,255,255,0.5);
+    transition: background 0.3s , color 0.3s;
+}
+.section3 .project_txt .button .btn_more:hover {
+    background-color :cadetblue;
+    color: #fff;
+}
