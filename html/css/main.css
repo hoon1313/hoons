@@ -10,232 +10,221 @@ body {
     color: #000;
     line-height: 1.5;
     font-size: 1.6rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 auto;
 }
 .inner {
-    max-width: calc(100% - 200px);
+    max-width: calc(100% - 400px);
     margin: 0 auto;
+}
+.title {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 4rem;
+}
+section {
+    margin-bottom: 150px;
 }
 @media (max-width : 1600px) {
     .inner {
-        max-width: calc(100% - 160px);
+        max-width: calc(100% - 200px);
     }
 }
 
 @media (max-width : 1400px) {
     .inner {
-        max-width: calc(100% - 140px);
+        max-width: calc(100% - 160px);
     }
 }
 
 @media (max-width : 1200px) {
     .inner {
-        max-width: calc(100% - 120px);
+        max-width: calc(100% - 140px);
     }
 }
 
 @media (max-width : 1000px) {
     .inner {
-        max-width: calc(100% - 100px);
+        max-width: calc(100% - 120px);
     }
 }
 
 @media (max-width : 768px) {
     .inner {
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 80px);
     }
 }
-.bg {
+
+/* 헤더 시작 */
+#header {
+    background-color : #000;
+}
+#header .inner {
     border: 1px solid blue;
+    display: flex;
     width: 100%;
-    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .inner .header_logo {
+    font-size: 4rem;
+}
+#header .inner .header_logo a{
+    color : #fff;
+    padding: 15px 0;
+    transition: color 0.3s;
+}
+#header .inner .header_logo a:hover {
+        color: rgb(0, 255, 64);
+}
+#header .inner .gnb{
+    display: flex;
+}
+#header .inner .gnb li a {
+    display: block;
+    padding: 30px 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color : #fff;
+        transition: color 0.3s;
+}
+
+#header .inner .gnb li:hover a {
+        color: rgb(0, 255, 64);
+}
+
+/* 헤더 끝 */
+
+/* 메인배너 시작 */
+#main_banner {
+        position: relative;
+            border: 1px solid red;
+}
+#main_banner .mb_video {    
+    width: 100%;
+}
+#main_banner .mb_video video {
+    width: 100%;
+    display: block;
+}
+#main_banner .mb_txt {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #fff;
     text-align: center;
 }
-.bg video {
+
+#main_banner .mb_txt h2 {
+    font-size: 6rem;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 5px;
+}
+
+/* 메인배너 끝 */
+
+/* 웹 포트폴리오 시작 */
+
+#web .web_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#web .web_title p {
+    color : #999;
+    font-weight: 300;
+}
+
+#web .web_contents ul{
+     display: flex;
+     width: 70%;
+     margin: 0 auto;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     border: 1px solid blue;
+
+    }
+#web .web_contents ul li {
+    width: calc((100% - 50px ) / 2);
+    margin-bottom: 25px;
+}
+#web .web_contents ul li img {
     display: block;
+    width: 100%;
 }
-.header .gnb {
-    width: 100%; 
-    height: 70px;
-    z-index: 999;
-    display: flex;
-    position: absolute;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    background-color: #fff;
+/* 웹 포트폴리오 끝 */
+
+/*  포트폴리오 시작 */
+
+#design .design_title {
+    text-align: center;
+    margin-bottom: 50px;
 }
-#fullpage .header .gnb li a { 
+#design .design_title p {
+    color : #999;
+    font-weight: 300;
+}
+
+#design .design_contents ul{
+     display: flex;
+     width: 70%;
+     margin: 0 auto;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     border: 1px solid blue;
+
+    }
+#design .design_contents ul li {
+    width: calc((100% - 50px ) / 2);
+    margin-bottom: 25px;
+}
+#design .design_contents ul li img {
     display: block;
-    padding: 30px 25px;
-    font-size: 1.8rem;
-    font-weight: 700;
+    width: 100%;
 }
-
-#fullpage .section1 .intro_txt {
-    position: absolute;
-    left: 50%;
-    top: 400px;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: -1px;
+/* 디자인 포트폴리오 끝 */
+#about { 
+    padding: 100px 0;
+    background: url("../img/h_bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-
-/* section2 시작 */
-.section2 {
-    background-color: aliceblue;
-}
-.section2 .profile .profile_img { 
-    width: 20%;
+#about .about_img {
+    text-align: center;
     border: 1px solid red;
     border-radius: 50%;
-    overflow: hidden;    
-    margin: 0 auto 50px;
 }
-.section2 .profile .profile_img img {
-    width: 100%;
-
+#about .about_img img {
+    width: 20%;
 }
-.section2 .profile_text { 
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-.section2 .profile_text ul li {
-    position: relative;
-}
-.section2 .profile_text ul li span.title{ 
-    font-size: 1.6rem;
-
-    font-weight: 700;
-}
-.section2 .profile_text ul li span.desc {
-    position: absolute;
-    padding: 5px 0;
-    width: 200px;
-    left: 50px;
-    top: 0;
-}
-.section2 .profile_text ul li:not(span) {
-    font-size: 1.2rem;
-    padding: 5px 0;
-} 
-.section2 .profile_text .certificate {
-    padding-left: 20px;
-}
-.section2 .profile_text .certificate::before  {
-    content: "";
-    position: absolute;
-    width: 8px;
-    left: 0;
-    top: 11px;
-    height: 8px;
-    background-color: #000;
-    display: block;
-}
-
-/* section3 시작 */
-.section3 {
-    border: 1px solid red;
-}
-.section3 .project h2{ 
-    font-size: 3rem;
-font-weight: 700;
-text-align: center;
-padding-bottom: 50px;
-
-}
-.section3 .project_info {
-    border: 1px solid rebeccapurple;
-    background-color: rgba(112,144,036,0.3);
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section3 .project_info .project_thumbnail {
-    width: 500px;
-    margin-right: 50px;
-}
-.section3 .project_info .project_thumbnail img { 
-    width: 500px;
-    height: 330px;
-    display: block;
-}
-
-.section3 .project_txt ul li {
-    font-weight: 700;
-    position: relative;
-    margin: 10px 0;
-}
-.section3 .project_txt ul li span{
-    font-size: 1.4rem;
-    font-weight: 400;
-    position: absolute;
-    width: 400px;
-    left: 150px;
-    top: 0;
-}
-
-.section3 .project_txt .button .btn_more{
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 1.3rem;
-    background-color: rgba(255,255,255,0.5);
-    transition: background 0.3s , color 0.3s;
-}
-.section3 .project_txt .button .btn_more:hover {
-    background-color :cadetblue;
+#about .about_title {
+    text-align: center;
+    margin-bottom: 50px;    
     color: #fff;
 }
-
-
-
-/* section4 시작 */
-.section4 { 
-    border: 1px solid red;
-}
-.section4 .design h2{ 
-    font-size: 3rem;
-font-weight: 700;
-text-align: center;
-padding-bottom: 50px;
-}
-.section4 .design_list ul{
-    border: 1px solid blue;
+#about .about_info {
+    color :#fff;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.section4 .design_list ul li  {
-    border: 1px solid red;
-    width: calc((100% - 150px) / 3);
+    justify-content: space-around;
+}       
+
+#about .about_info li {
     position: relative;
-
 }
-
-.section4 .design_list ul li a img {
-    width: 100%;
-}
-
-.section .design_list ul li .img_hover {
-    text-align: center;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
+#about .about_info li .desc {
     position: absolute;
-    left: 0;
     top: 0;
-        transition: opacity 0.3s;
+    left: 60px;
+    width: 300px;
 }
-.section4 .design_list ul li:hover .img_hover {
-    opacity: 1;
+#about .about_info .sm_title {
+    font-size: 2.4rem;
+    color : #fff;
+    font-weight: 700;
 }
+
+/* 에필로그 시작 */
+#epilogue .ep_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* 에필로그 끝 */

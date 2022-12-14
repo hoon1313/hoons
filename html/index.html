@@ -4,68 +4,109 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>hoon</title>
+        <title>hoon's portfolio</title>
+
+        <!-- font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
 
         <!-- stylesheet -->
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/jquery.fullPage.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!-- js -->
         <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/jquery.fullPage.js"></script>
-        <script src="js/swiper-bundle.min.js"></script>
         <script src="js/common.js"></script>
 
     </head>
     <body>
         <div id="wrap">
-            <div id="fullpage">
-                <div class="section section1" data-anchor="section1">
-                    <div class="bg">
-                        <video src="img/background.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
-
+            <header id="header">
+                <div class="inner">
+                    <div class="header_logo">
+                        <h1>
+                            <a href="#">Hoons</a>
+                        </h1>
                     </div>
-                    <div class="intro_txt">
-                        <h2>안녕하세요<br>
-                            <span>
-                                ~~~~한
-                            </span>
-                            <br>
-                            퍼블리셔 정상훈입니다.
-                        </h2>
-                    </div>
-                    <nav class="header">
+                    <nav>
                         <ul class="gnb">
-                            <li data-menuanchor="section1">
-                                <a href="#section1">Home</a>
+                            <li>
+                                <a href="#">PORTFOLIO</a>
                             </li>
-                            <li data-menuanchor="section2">
-                                <a href="#section2">About</a>
+                            <li>
+                                <a href="#">ABOUT ME</a>
                             </li>
-                            <li data-menuanchor="section3">
-                                <a href="#section3">Web</a>
+                            <li>
+                                <a href="#">EPILOGUE</a>
                             </li>
-                            <li data-menuanchor="section4">
-                                <a href="#section4">Design</a>
-                            </li>
-                            <li data-menuanchor="section5">
-                                <a href="#section5">Resume</a>
+                            <li>
+                                <a href="#">RESUME</a>
                             </li>
                         </ul>
+                        <!-- gnb -->
                     </nav>
-
                 </div>
-                <div class="section section2" data-anchor="section2">
-                    <div class="profile">
-                        <div class="profile_img">
-                            <img src="img/business-man-g239a4be57_640.png" alt="증명사진">
+                <!-- inner -->
+            </header>
+            <!-- header -->
+            <main id="container">
+                <section id="main_banner">
+                    <div class="mb_video">
+                        <video src="img/background.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
+                    </div>
+                    <div class="mb_txt title">
+                        <h2>정상훈</h2>
+                        <p>abcd</p>
+                    </div>
+                </section>
+                <!-- main_banner -->
+                <section id="web">
+                    <div class="inner">
+                        <div class="web_title">
+                            <h2 class="title">Web Portfolio</h2>
+                            <p>WEB PUBLISHING, RESPONSIVE WEB, MOBILE UI/UX, BLOG</p>
+                        </div><!-- web_title -->
+                        <div class="web_contents">
+                            <ul>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                            </ul>
                         </div>
-                        <div class="profile_text">
+                    </div><!-- inner -->
+                </section><!-- web -->
+                <section id="design">
+                    <div class="inner">
+                        <div class="design_title">
+                            <h2 class="title">Design Portfolio</h2>
+                            <p>BI/BX DESIGN, VISUAL DESIGN, EDITORIAL DESIGN</p>
+                        </div><!-- web_title -->
+                        <div class="design_contents">
+                            <ul>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/codestates_thumbnail.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- inner -->
+                </section><!-- design -->
+
+                <section id="about">
+                    <div class="inner">
+                        <div class="about_title">
+                            <h2 class="title">ABOUT ME</h2>
+                        </div>
+                        <div class="about_img">
+                            <img src="img/tms_img_mo_20221020100829_0.png" alt="">
+                        </div>
+                        <div class="about_info">
                             <ul>
                                 <li>
-                                    <span class="title">PROFILE</span></li>
+                                    <span class="sm_title">PROFILE</span>
+                                </li>
                                 <li>Name<span class="desc">정상훈</span></li>
                                 <li>Birth<span class="desc">1999.01.01</span></li>
                                 <li>Phone<span class="desc">010-4498-8890</span></li>
@@ -73,7 +114,8 @@
                             </ul>
                             <ul>
                                 <li>
-                                    <span class="title">EDUCATION</span></li>
+                                    <span class="sm_title">EDUCATION</span>
+                                </li>
                                 <li>2023.01<span class="desc">부산it아카데미 ~~수료</span></li>
                                 <li>2022.03<span class="desc">경남정보대 컴퓨터계열 졸업</span></li>
                                 <li>2017.02<span class="desc">부산산업학교 IT콘텐츠과 졸업</span></li>
@@ -81,156 +123,27 @@
                             </ul>
                             <ul>
                                 <li>
-                                    <span class="title">CERTIFICATE</span></li>
+                                    <span class="sm_title">CERTIFICATE</span>
+                                </li>
                                 <li class="certificate">GTQ포토샵 1급</span></li>
-                            <li class="certificate">ITQ 한글,파워포인트,엑셀 A</span></li>
-                        <li class="certificate">컴퓨터활용능력 2급</span></li>
-                    <li class="certificate">웹디자인기능사</span></li>
-            </ul>
+                                <li class="certificate">ITQ 한글,파워포인트,엑셀 A</span></li>
+                                <li class="certificate">컴퓨터활용능력 2급</span></li>
+                                <li class="certificate">웹디자인기능사</span></li>
+                            </ul>
+                        </div><!-- about_info -->
+                    </div><!-- inner -->
+                </section><!-- about -->
+                <section id="epilogue">
+                    <div class="inner">
+                        <div class="ep_title">
+                        <h2 class="title">EPILOGUE</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error odit modi, illo autem labore dolor, blanditiis ipsam soluta dolore natus iste, voluptates qui accusantium omnis quisquam. Iure, quo maiores.</p>
+                    </div>
+                </section>
+            </main>
+            <!-- container -->
         </div>
-    </div>
-</div>
-<div class="section section3" data-anchor="section3">
-    <div class="project">
-
-        <h2>01. Web</h2>
-    </div>
-    <div class="slide">
-        <div class="project_info">
-            <div class="project_thumbnail">
-                <img src="img/thumbnail.png" alt="코드스테이츠 썸네일">
-            </div>
-            <div class="project_txt">
-                <ul>
-                    <li>프로젝트명
-                        <span class="desc">Dal.komm 홈페이지 리뉴얼</span></li>
-                    <li>프로젝트 구성
-                        <span class="desc">Mainpage + Subpage(브랜드이야기)</span></li>
-                    <li>참여도
-                        <span class="desc">100% (1인 프로젝트)</span></li>
-                </ul>
-                <div class="button">
-                    <a href="project/dalkomm/index.html" class="btn_more website" target="_blank">View Website</a>
-                    <a
-                        href="https://www.figma.com/file/tvPxqXokF4LXSEi572fG4G/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0%3A1&t=fy8J6agkJnRs9hcb-1"
-                        class="btn_more wireframe"
-                        target="_blank">Wireframes</a>
-                    <a
-                        href="https://www.figma.com/file/AAiLqLlplrIrLnthtRi4AQ/%EB%8B%AC%EC%BD%A4_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85?node-id=0%3A1&t=culc55QBEbNYzEEU-1"
-                        class="btn_more prototype"
-                        target="_blank">Prototype</a>
-                </div>
-            </div>
-        </div>
-        <!-- project_info -->
-    </div>
-    <!-- slide -->
-    <div class="slide">
-        <div class="project_info">
-            <div class="project_thumbnail">
-                <img src="img/codestates_thumbnail.png" alt="코드스테이츠 썸네일">
-            </div>
-            <div class="project_txt">
-                <ul>
-                    <li>프로젝트명
-                        <span class="desc">Codestates 홈페이지 리뉴얼</span></li>
-                    <li>프로젝트 구성
-                        <span class="desc">Mainpage + Subpage(기업교육)</span></li>
-                    <li>참여도
-                        <span class="desc">100% (1인 프로젝트)</span></li>
-                </ul>
-                <div class="button">
-                    <a
-                        href="project/codestates/index.html"
-                        class="btn_more website"
-                        target="_blank">View Website</a>
-                    <a
-                        href="https://www.figma.com/file/qV2D1dYUBARAQ1Ra5wIoCY/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0?node-id=0%3A1&t=vjp7upLrXh44d0yx-1"
-                        class="btn_more wireframe"
-                        target="_blank">Wireframes</a>
-                    <a
-                        href="https://www.figma.com/file/BZ2hphTYQ5on7aqqiAfNdX/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85?node-id=0%3A1&t=cJkdKkdkaNF1nqfb-1"
-                        class="btn_more prototype"
-                        target="_blank">Prototype</a>
-                </div>
-            </div>
-            
-        </div>
-        <!-- project_info -->
-    </div>
-    <!-- slide -->
-    <div class="slide">
-        <div class="project_info">
-            <div class="project_thumbnail">
-                <img src="img/codestates_thumbnail.png" alt="코드스테이츠 썸네일">
-            </div>
-            <div class="project_txt">
-                <ul>
-                    <li>프로젝트명
-                        <span class="desc">한솔홈데코 클론코딩</span></li>
-                    <li>프로젝트 구성
-                        <span class="desc">Mainpage</span></li>
-                    <li>참여도
-                        <span class="desc">100% (1인 프로젝트)</span></li>
-                </ul>
-                <div class="button">
-                    <a
-                        href="project/codestates/index.html"
-                        class="btn_more website"
-                        target="_blank">View Website</a>
-                    <a
-                        href="https://www.figma.com/file/qV2D1dYUBARAQ1Ra5wIoCY/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0?node-id=0%3A1&t=vjp7upLrXh44d0yx-1"
-                        class="btn_more wireframe"
-                        target="_blank">Wireframes</a>
-                    <a
-                        href="https://www.figma.com/file/BZ2hphTYQ5on7aqqiAfNdX/%EC%BD%94%EB%93%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%B8%A0_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85?node-id=0%3A1&t=cJkdKkdkaNF1nqfb-1"
-                        class="btn_more prototype"
-                        target="_blank">Prototype</a>
-                </div>
-            </div>
-        </div>
-        <!-- project_info -->
-    </div>
-    <!-- slide -->
-</div>
-<!-- section3 -->
-<div class="section section4" data-anchor="section4">
-    <div class="inner">
-        <div class="design">
-            <h2>02. Design</h2>
-        </div>
-        <!-- design -->
-        <div class="design_list">
-            <ul>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                    <p class="img_hover">dd</p>
-                </li>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/codestates_thumbnail.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <!-- design_list -->
-    </div>
-    <!-- inner -->
-</div>
-<!-- section4-->
-</div>
-<!-- fullpage -->
-</div>
-<!-- wrap -->
-</body>
+        <!-- wrap -->
+    </body>
 </html>
