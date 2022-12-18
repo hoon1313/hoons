@@ -25,6 +25,10 @@ body {
     float: left;
     padding-top: 20px;
 padding-right: 100px;    
+position: relative;
+}
+#header .inner nav {
+    position: relative;
 }
 #header .inner .header_family {
     float: right;
@@ -34,9 +38,34 @@ padding-right: 100px;
     float: left;
 }
 #header .inner .gnb > li { 
+    position: relative;
     float: left;
     border: 1px solid white;
 }
+
+#header .inner .gnb > li:hover .depth2{
+    opacity: 1;
+}
+#header .inner .depth2 {
+    position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#header .inner .depth2 li:hover a {
+    color: #720000;
+}
+#header .inner .depth2 li a {
+    transition: color 0.3s;
+    display: block;
+    padding: 10px 0;
+}
+
 #header .inner .gnb > li > a{
     display: block;
     padding: 30px 50px;
