@@ -166,9 +166,9 @@ section {
 
 #web .web_contents ul{
      display: flex;
-     width: 80%;
+    width: 70%;
      margin: 0 auto;
-     justify-content: space-between;
+     justify-content: space-evenly;
      flex-wrap: wrap;
 
 }
@@ -224,7 +224,7 @@ section {
     opacity: 1;
 }
 
-#web .web_contents .go_project .btn_go {
+.btn_go {
     display: inline-block;
     color: #FFF;
     padding: 5px 10px;
@@ -232,9 +232,10 @@ section {
     margin-top: 20px;
     border-radius: 10px;
     background-color: #000;
+    cursor: pointer;
     transition: color 0.3s, background 0.3s;
 }
-#web .web_contents .go_project .btn_go:hover{
+.btn_go:hover{
     background-color: #FFF;
     color: #000;
 }
@@ -244,6 +245,7 @@ section {
 #design {
     background-color: #fff;
     padding: 30px 0;
+    text-align: center;
 }
 #design .design_title {
     text-align: center;
@@ -253,22 +255,46 @@ section {
     color : #999;
     font-weight: 300;
 }
-
+#design .design_contents .design_desc {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
 #design .design_contents ul{
      display: flex;
-     width: 70%;
+     width: 100%;
      margin: 0 auto;
      justify-content: space-evenly;
      flex-wrap: wrap;
 
     }
 #design .design_contents ul li {
-    width: calc((100% - 50px ) / 2);
     margin-bottom: 25px;
+}
+#design .design_contents ul li .frame {
+    border: 1px solid red;
+    width: 400px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+#design .design_contents ul li .frame:hover img{
+    height: 1600px;
+    animation: design 8s linear;
 }
 #design .design_contents ul li img {
     display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
     width: 100%;
+}
+@keyframes design { 
+    0%{  
+        top: 0;
+    }
+    100% {
+        top: -1400px;
+    }
 }
 /* 디자인 포트폴리오 끝 */
 
