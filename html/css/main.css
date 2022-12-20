@@ -243,7 +243,7 @@ section {
 
 /*  포트폴리오 시작 */
 #design {
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 30px 0;
     text-align: center;
 }
@@ -271,7 +271,7 @@ section {
     margin-bottom: 25px;
 }
 #design .design_contents ul li .frame {
-    border: 1px solid red;
+    box-shadow: 5px 10px 10px #ccc;
     width: 400px;
     height: 240px;
     overflow: hidden;
@@ -308,7 +308,7 @@ section {
 #about .about_contents {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 #about .about_img {
     width: 30%;
@@ -332,6 +332,9 @@ section {
     display: inline-block;
     padding: 30px 80px;
 }
+#about .about_info ul:nth-child(2) {
+    padding-right: 0;
+}
 #about .about_info li {
     position: relative;
     padding: 10px 0;
@@ -342,7 +345,7 @@ section {
     font-size: 1.4rem;
     top: 10px;
     left: 70px;
-    width: 300px;
+    width: 500px;
 }
 #about .about_info .sm_title {
     font-size: 2.4rem;
