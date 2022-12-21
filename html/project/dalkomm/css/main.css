@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     font-size: 1.6rem;
     font-family: 'Noto Sans KR', serif;
-    background-color: #fbf4e4;
+    background-color: rgb(255, 244, 233);
 }
 
 .cooper {
@@ -394,8 +394,8 @@ body {
 /* main_banner 영역 끝 */
 
 /* intro부분 시작 */
-
 #intro .inner {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -615,6 +615,11 @@ body {
 /* find 부분 끝 */
 
 /* news부분 시작 */
+
+#news {
+    padding: 50px 0;
+    background-color: #fff;
+}
 #news .title {
     text-align: center;
     color: #f26a1b;
