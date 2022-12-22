@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hoon's portfolio</title>
         <!-- icon -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <!-- font -->
         <link
             href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
@@ -19,6 +21,7 @@
         <!-- js -->
         <script src="js/jquery-3.6.1.min.js"></script>
         <script src="js/common.js"></script>
+        
 
     </head>
     <body>
@@ -61,15 +64,24 @@
             <!-- header -->
             <main id="container">
                 <section id="main_banner">
+                 
                     <div class="mb_video">
                         <video src="img/mv2.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
                     </div>
                     <div class="mb_txt title">
                         <h2>정상훈</h2>
-
+                        <div class="quote">
+                            <span></span><br>
+                            <span></span>
+                        </div>
                     </div>
+
                 </section>
                 <!-- main_banner -->
+                <div id="clock">
+                    <p>현재시각</p>
+                    <h2 class="clock">00:00:00</h2>
+                </div>
                 <section id="web">
                     <div class="inner">
                         <div class="web_title">
@@ -215,7 +227,20 @@
                                         <img src="design/promo.png" alt="이벤트 프로모션 사진">
                                     </div>
                                     <a href="design/promo.html" target="_blank" class="btn_go">크게보기</a>
- 
+                                </li>
+                                <li>
+                                    <h3 class="design_desc">카드뉴스</h3>
+                                    <div class="frame">
+                                        <img src="design/cardnews.png" alt="카드뉴스 사진">
+                                    </div>
+                                    <a href="design/card.html" target="_blank" class="btn_go">크게보기</a>
+                                </li>
+                                <li>
+                                    <h3 class="design_desc">배너 디자인</h3>
+                                    <div class="frame">
+                                        <img src="design/banner.png" alt="카드뉴스 사진">
+                                    </div>
+                                    <a href="design/banner.html" target="_blank" class="btn_go">크게보기</a>
                                 </li>
                             </ul>
                         </div>
@@ -232,8 +257,7 @@
                         </div>
                         <!-- about_title -->
                         <div class="about_contents">
-                            <div class="about_img">
-                            </div>
+                            <div class="about_img"></div>
                             <!-- about_img -->
                             <div class="about_info">
                                 <ul>
@@ -250,20 +274,19 @@
                                         <span class="sm_title">CERTIFICATE</span>
                                     </li>
                                     <li class="certificate">GTQ포토샵 1급</span></li>
-                                    <li class="certificate">ITQ 한글,파워포인트,엑셀 A</span></li>
-                                    <li class="certificate">컴퓨터활용능력 2급</span></li>
-                                    <li class="certificate">웹디자인기능사</span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span class="sm_title">EDUCATION</span>
-                                    </li>
-                                    <li>2023.01<span class="desc">부산IT교육센터 『 반응형웹디자인 & 웹퍼블리싱 과정 수료 』</span></li>
-                                    <li>2022.03<span class="desc">경남정보대 컴퓨터계열 졸업</span></li>
-                                    <li>2017.02<span class="desc">부산산업학교 IT콘텐츠과 졸업</span></li>
-                                    <li>2017.02<span class="desc">신도고등학교 졸업</span></li>
-                                </ul>
-                                
+                                <li class="certificate">ITQ 한글,파워포인트,엑셀 A</span></li>
+                            <li class="certificate">컴퓨터활용능력 2급</span></li>
+                        <li class="certificate">웹디자인기능사</span></li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="sm_title">EDUCATION</span>
+                    </li>
+                    <li>2023.01<span class="desc">부산IT교육센터 『 반응형웹디자인 & 웹퍼블리싱 과정 수료 』</span></li>
+                    <li>2022.03<span class="desc">경남정보대 컴퓨터계열 졸업</span></li>
+                    <li>2017.02<span class="desc">부산산업학교 IT콘텐츠과 졸업</span></li>
+                    <li>2017.02<span class="desc">신도고등학교 졸업</span></li>
+                </ul>
 
             </div>
             <!-- about_info -->
@@ -298,15 +321,26 @@
         <ul class="sns">
             <li>
                 <a href="https://www.instagram.com/_hoon_sang_/" target="_blank">
-                <i class="bi bi-instagram"></i></a><br>
+                    <i class="bi bi-instagram"></i>
+                </a><br>
                 Instagram</li>
-            <li><a href="https://darkened-dungeon-5e3.notion.site/UI-UX-0cadb019ce024c769b83c492ec033eb3" target="_blank"><i class="bi bi-journal"></i></i></a>
-         <br>Notion</li>
-            <li><a href="https://github.com/hoon1313" target="_blank"><i class="bi bi-github"></i></i></a><br>
-            Github</li>
-        </ul>
-      
-    </div>
+            <li>
+                <a
+                    href="https://darkened-dungeon-5e3.notion.site/UI-UX-0cadb019ce024c769b83c492ec033eb3"
+                    target="_blank">
+                    <i class="bi bi-journal"></i>
+                </i>
+            </a>
+            <br>Notion</li>
+        <li>
+            <a href="https://github.com/hoon1313" target="_blank">
+                <i class="bi bi-github"></i>
+            </i>
+        </a><br>
+        Github</li>
+</ul>
+
+</div>
 </section>
 </main>
 <!-- container -->
@@ -314,4 +348,8 @@
 </div>
 <!-- wrap -->
 </body>
+
+<!-- 기능 JS들 -->
+<script src="js/quotes.js"></script>
+<script src="js/clock.js"></script>
 </html>
