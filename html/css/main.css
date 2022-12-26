@@ -55,7 +55,24 @@ section {
         max-width: calc(100% - 80px);
     }
 }
+.snowflake {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -20px;
+    z-index: 99999999;
+}
 
+@keyframes snow {
+    from{}
+
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
 /* 헤더 시작 */
 #header {
     width: 100%;
@@ -186,7 +203,7 @@ section {
     display: inline-block;
     font-size: 6rem;
     font-weight: 700;
-    color:darkmagenta;
+    color :darkblue;
 }
 /* 웹 포트폴리오 시작 */
 #web {
