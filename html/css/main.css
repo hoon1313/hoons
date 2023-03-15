@@ -474,13 +474,30 @@ section {
 /*  포트폴리오 시작 */
 #design {
     padding: 30px 0;
-    text-align: center;
 }
 
 
 #design .design_title {
     text-align: center;
+    position: relative;
     margin-bottom: 70px;
+}
+
+#design .design_desc {
+    position: relative;
+    padding-left: 20px;
+}
+
+#design .design_desc:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+
 }
 
 #design .design_title p {
@@ -559,7 +576,7 @@ section {
 /* about 시작 */
 #about {
     padding: 100px 0;
-    background: url("../img/sea.jpg") no-repeat center center;
+    background: url("../img/dark-gb95da6625_1920.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -570,7 +587,7 @@ section {
     justify-content: center;
 }
 
-#about .about_img {
+/* #about .about_img {
     width: 500px;
     height: 500px;
     text-align: center;
@@ -580,7 +597,7 @@ section {
     border: 1px solid #fff;
     background-size: cover;
     transition: transform 1s;
-}
+} */
 
 #about .about_img:hover {
     transform: rotateY(180deg);
@@ -591,9 +608,9 @@ section {
 }
 
 #about .about_title {
-    text-align: center;
     margin-bottom: 50px;
     color: #fff;
+    font-weight: 3rem;
 }
 
 #about .about_info {
@@ -611,8 +628,7 @@ section {
 
 #about .about_info li {
     position: relative;
-    padding: 10px 0;
-
+    padding: 10px 0
 }
 
 #about .about_info li .desc {
@@ -724,6 +740,8 @@ section {
 
 #more .useable p {
     margin-bottom: 20px;
+    color: #fff;
+
 }
 
 #more .useable ul {
@@ -737,6 +755,7 @@ section {
 #more .useable li {
     width: 100px;
     margin: 20px;
+
 }
 
 #more .useable li img {
@@ -746,6 +765,7 @@ section {
 }
 
 #more .sns {
+
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -754,6 +774,7 @@ section {
 
 #more .sns li {
     margin: 40px;
+    color: #fff;
 }
 
 #more .sns li:hover .bi {
@@ -762,6 +783,8 @@ section {
 
 #more .sns li .bi {
     font-size: 4rem;
+    color: #fff;
+
     transition: font-size 0.3s;
 }
 
