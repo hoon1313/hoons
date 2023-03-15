@@ -202,7 +202,7 @@ body {
 }
 
 #mainBanner .swiper-wrapper a img {
-height: 900px;
+    height: 900px;
     display: block;
 }
 
@@ -329,7 +329,7 @@ dt #product .product_list dl dd {
 #magazine .inner .magazine_right {
     width: 500px;
     padding: 20px;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     height: auto;
 }
 

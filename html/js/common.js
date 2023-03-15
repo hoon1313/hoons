@@ -5,4 +5,14 @@ $(document).ready(function () {
     $(".gnb > li").hover(function () {
         $(this).children(".depth2").stop().slideToggle(200);
     });
+
+
+    var swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type : 'bullets',  // 버튼 종류 설정 'bullets' | 'fraction' | 'progressbar'
+clickable : true,  // 버튼 클릭 여부
+        },
+      });
 });

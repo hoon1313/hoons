@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼진어묵 공식쇼핑몰</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!-- js -->
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_top">
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li class="signup"><a href="#">회원가입</a>
+                            <span class="signup_event">2천원 즉시지급</span>
+                        </li>
+                        <li><a href="#">장바구니 (0)</a></li>
+                        <li class="mypage"><a href="#">마이페이지
+                                <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <ul class="header_depth2">
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">내 정보 수정</a></li>
+                                <li><a href="#">찜 리스트</a></li>
+                                <li><a href="#">1:1 문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">회사소개</a></li>
+                    </ul>
+                </div><!-- inner-->
+            </div><!-- header_top -->
+            <div class="header_middle">
+                <div class="inner">
+                    <div class="help">
+                        <a href="#">사업자 전용 > </a>
+                        <a href="#">매장찾기 > </a>
+                    </div><!-- help -->
+                    <div class="header_logo">
+                        <figure>
+                            <h1>
+                                <a href="#">
+                                    <img src="img/logo.svg" alt="삼진어묵 로고">
+                                </a>
+                            </h1>
+                        </figure>
+                    </div><!-- header_logo -->
+                </div><!-- inner -->
+            </div><!-- header_middle -->
+        </header><!-- header -->
+        <nav id="nav">
+            <div class="inner">
+                <div class="category">
+                    <span class="category_icon">
+                        <i class="bi bi-list ham"></i>
+                        <i class="bi bi-x-lg close"></i>
+                    </span>
+                    <span class="total">전체 카테고리</span>
+                </div><!-- category -->
+
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">베스트 상품</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li><a href="#">이벤트/혜택</a></li>
+                        <li><a href="#">금복레시피</a></li>
+                        <li><a href="#">선물하기</a></li>
+                    </ul>
+                </div><!-- gnb -->
+
+                <div class="search">
+                    <form action="submit">
+                        <fieldset>
+                            <legend>
+                                <input type="text">
+                                <i class="bi bi-search"></i>
+                            </legend>
+                        </fieldset>
+                    </form>
+                </div><!-- search -->
+            </div><!-- inner -->
+        </nav><!-- nav -->
+        <div class="sitemap">
+            <div class="inner">
+                <div class="sitemap_menu">
+                    <div class="menu_top clearfix">
+                        <nav class="menu_nav">
+                            <ul class="menu clearfix">
+                                <li class="menu_list">
+                                    <strong>
+                                        <a href="#" class="menu_tit">어묵</a>
+                                    </strong>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">모둠어묵</a></li>
+                                        <li><a href="#">사각어묵</a></li>
+                                        <li><a href="#">단품어묵</a></li>
+                                        <li><a href="#">진공포장어묵</a></li>
+                                        <li><a href="#">꼬치어묵</a></li>
+                                    </ul><!-- sub_menu -->
+                                </li><!-- menu_list -->
+                                <li class="menu_list">
+                                    <strong>
+                                        <a href="#" class="menu_tit">간편식/간식</a>
+                                    </strong>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">어묵크로켓</a></li>
+                                        <li><a href="#">딱한끼 시리즈</a></li>
+                                        <li><a href="#">간식어묵바</a></li>
+                                        <li><a href="#">HMR</a></li>
+                                    </ul><!-- sub_menu -->
+                                </li><!-- menu_list -->
+                                <li class="menu_list">
+                                    <strong>
+                                        <a href="#" class="menu_tit">선물세트</a>
+                                    </strong>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">이금복명품세트</a></li>
+                                        <li><a href="#">삼진프리미엄세트</a></li>
+                                        <li><a href="#">1953선물세트</a></li>
+                                        <li><a href="#">선물하기</a></li>
+                                    </ul><!-- sub_menu -->
+                                </li><!-- menu_list -->
+                                <li class="menu_list">
+                                    <strong>
+                                        <a href="#" class="menu_tit">소스</a>
+                                    </strong>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">소스세트</a></li>
+                                        <li><a href="#">딥소스</a></li>
+                                        <li><a href="#">스프류</a></li>
+                                    </ul><!-- sub_menu -->
+                                </li><!-- menu_list -->
+                            </ul> <!-- menu -->
+                        </nav><!-- menu_nav -->
+                        <div class="menu_search">
+                            <div class="ms_title">
+                                <h4>상품 맞춤검색</h4>
+                            </div><!-- ms_title -->
+                            <div class="serach_table">
+                                <ul>
+                                    <em>용도별</em>
+                                    <li><a href="#">간식용</a></li>
+                                    <li><a href="#">국탕용</a></li>
+                                    <li><a href="#">떡볶이용</a></li>
+                                    <li><a href="#">캠핑/간편조리</a></li>
+                                </ul>
+                                <ul>
+                                    <em>형태별</em>
+                                    <li><a href="#">사각</a></li>
+                                    <li><a href="#">봉</a></li>
+                                    <li><a href="#">말이</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <ul>
+                                    <em>맛/재료별</em>
+                                    <li><a href="#">매운맛</a></li>
+                                    <li><a href="#">야채맛</a></li>
+                                    <li><a href="#">해물맛</a></li>
+                                    <li><a href="#">담백한맛</a></li>
+                                </ul>
+                                <ul>
+                                    <em>금액대별</em>
+                                    <li><a href="#">1만원 이하</a></li>
+                                    <li><a href="#">1~3만원대</a></li>
+                                    <li><a href="#">3~5만원대</a></li>
+                                    <li><a href="#">5만원 이상</a></li>
+                                </ul>
+                                <form>
+                                    <input type="submit" value="검색">
+                                </form>
+                            </div><!-- serach_table -->
+
+                        </div><!-- menu_search -->
+                    </div><!-- menu_top -->
+                    <div class="menu_bottom">
+                        <ul class="clearfix">
+                            <li><a href="#"><i class="bi bi-box2"></i> 대량주문</a></li>
+                            <li><a href="#"><i class="bi bi-gift"></i> 선물하기</a></li>
+                            <li><a href="#"><i class="bi bi-bag-check"></i> 이지픽</a></li>
+                            <li><a href="#"><i class="bi bi-pin-map"></i>매장찾기</a></li>
+                            <li><a href="#"><i class="bi bi-journal-text"></i> 체험·역사관 예약</a></li>
+                            <li><a href="#"><i class="bi bi-chat-dots"></i> 고객센터</a></li>
+                        </ul>
+                    </div><!-- menu_bottom -->
+                </div><!-- sitemap_menu -->
+
+            </div><!-- inner -->
+        </div><!-- sitemap -->
+        <main id="container">
+            <section id="banner">
+                <div class="banner_img">
+                    <div><a href="#"><img src="img/banner1.jpg" alt="배너이미지1"></a></div>
+                    <div><a href="#"><img src="img/banner2.jpg" alt="배너이미지2"></a></div>
+                    <div><a href="#"><img src="img/banner3.jpg" alt="배너이미지3"></a></div>
+                    <div><a href="#"><img src="img/banner4.jpg" alt="배너이미지4"></a></div>
+                    <div><a href="#"><img src="img/banner5.jpg" alt="배너이미지5"></a></div>
+                </div>
+            </section><!-- banner -->
+            <section id="best">
+                <div class="inner">
+                    <div class="best_tit">
+                        <h2>삼진어묵 베스트</h2>
+                        <a href="#" class="btn_more">더보기 <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="best_cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product1.jpg" alt="베스트 상품이미지 1">
+                                    </div><!-- product_img -->
+                                    <div class="product_img-hover">
+                                        <img src="img/product1_hover.png" alt="베스트 상품이미지 1">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>장바구니</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product2.jpg" alt="베스트 상품이미지 2">
+                                    </div><!-- product_img -->
+                                    <div class="product_img-hover">
+                                        <img src="img/product2_hover.png" alt="베스트 상품이미지 2">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>장바구니</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product3.jpg" alt="베스트 상품이미지 3">
+                                    </div><!-- product_img -->
+                                    <div class="product_img-hover">
+                                        <img src="img/product3_hover.png" alt="베스트 상품이미지 3">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>장바구니</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product4.jpg" alt="베스트 상품이미지 4">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product5.jpg" alt="베스트 상품이미지 5">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="sale">
+                                    특가
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product6.jpg" alt="베스트 상품이미지 6">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product7.jpg" alt="베스트 상품이미지 7">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/product8.png" alt="베스트 상품이미지 8">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                        </ul>
+                    </div><!-- best_cards -->
+
+                </div><!-- inner -->
+            </section><!-- best -->
+            <section id="recommend">
+                <div class="inner">
+                    <div class="recommend_tit">
+                        <h2>삼진어묵 추천상품</h2>
+                        <a href="#" class="btn_more">더보기 <i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                    <div class="recommend_cards">
+                        <ul>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend1.png" alt="추천상품 이미지 1">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend2.png" alt="추천상품 이미지 2">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="gift">
+                                    증정
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend3.png" alt="추천상품 이미지 3">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="sale">
+                                    특가
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend4.jpg" alt="추천상품 이미지 ">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend5.jpg" alt="추천상품 이미지 5">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend6.png" alt="추천상품 이미지 6">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend7.jpg" alt="추천상품 이미지 7">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                            </li><!-- card -->
+                            <li class="card">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/recommend8.jpg" alt="추천상품 이미지 8">
+                                    </div><!-- product_img -->
+                                    <div class="product_info">
+                                        <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                        <h3 class="pi_name">이금복 명품세트</h3>
+                                        <p class="pi_price">58,000원</p>
+                                    </div><!-- product_info -->
+                                </a>
+                                <div class="product_select">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i class="bi bi-heart"></i>
+                                                <span>찜하기</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">
+                                                <i class="bi bi-cart4"></i>
+                                                <span>선물하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- product_select -->
+                                <p class="best">
+                                    BEST
+                                </p>
+                            </li><!-- card -->
+                        </ul>
+
+                    </div><!-- inner -->
+            </section><!-- recommend -->
+            <section id="set">
+                <div class="inner">
+                    <div class="set_tit">
+                        <h2>삼진어묵 선물세트</h2>
+                    </div><!-- set_tit -->
+                    <ul class="set_slide">
+                        <li><a href="#">
+                                <img src="img/set1.jpg" alt="선물세트 1번사진">
+                            </a>
+                            <div class="product_info">
+                                <h3 class="pi_name">1953세트 1호</h3>
+                                <p class="pi_tit">인기 고급제품으로 구성된 선물세트</p>
+                                <p class="pi_price">28,000원</p>
+                            </div><!-- product_info -->
+                            <p class="best">BEST</p>
+                        </li>
+                        <li><a href="#">
+                                <img src="img/set2.jpg" alt="선물세트 2번사진">
+                            </a>
+                            <div class="product_info">
+                                <h3 class="pi_name">이금복 명품세트</h3>
+                                <p class="pi_tit">이금복 장인의 열정이 담긴 명품 어묵세트</p>
+                                <p class="pi_price">58,000원</p>
+                            </div><!-- product_info -->
+                            <p class="best">BEST</p>
+                        </li>
+                        <li><a href="#">
+                                <img src="img/set3.jpg" alt="선물세트 3번사진">
+                            </a>
+                            <div class="product_info">
+                                <h3 class="pi_name">삼진프리미엄세트</h3>
+                                <p class="pi_tit">삼진을 대표하는 프리미엄 어묵</p>
+                                <p class="pi_price">48,000원</p>
+                            </div><!-- product_info -->
+                            <p class="best">BEST</p>
+                        </li>
+                        <li><a href="#">
+                                <img src="img/set4.jpg" alt="선물세트 4번사진">
+                            </a>
+                            <div class="product_info">
+                                <h3 class="pi_name">1953세트 2호</h3>
+                                <p class="pi_tit">인기 고급제품으로 구성된 선물세트</p>
+                                <p class="pi_price">38,000원</p>
+                            </div><!-- product_info -->
+                            <p class="best">BEST</p>
+                        </li>
+                    </ul>
+                </div><!-- inner -->
+            </section><!-- set -->
+            <section id="video">
+                <h2 class="ir_su">삼진어묵 홍보 유튜브 비디오</h2>
+                <div class="inner">
+                    <div class="video_wrap">
+                        <iframe src="https://www.youtube.com/embed/sB5lrWk9UlI?autoplay=1&mute=1&loop=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div><!-- video_wrap -->
+                </div>
+            </section><!-- video -->
+            <section id="recipe">
+                <div class="inner">
+                    <div class="recipe_tit">
+                        <h2>삼진어묵 금복레시피</h2>
+                        <a href="#" class="btn_more">더보기 <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div><!-- inner -->
+                <ul class="recipe_wrap">
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe1.jpg" alt="레시피 사진 1">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #오꼬노미야키
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵오꼬노미야키 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe2.jpg" alt="레시피 사진 2">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #어묵파운드케익
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵파운드케이크 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe3.jpg" alt="레시피 사진 3">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #마파두부
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 마파두부 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe4.jpg" alt="레시피 사진 4">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #어떡어떡꼬치 #
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어떡어떡꼬치 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe5.jpg" alt="레시피 사진 5">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #떡볶이 #궁중떡볶이
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 궁중떡볶이 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe6.jpg" alt="레시피 사진 6">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #칼국수 #장칼국수
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵장칼국수 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe7.jpg" alt="레시피 사진 7">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #어묵오징어볶음
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵오징어볶음 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe8.jpg" alt="레시피 사진 8">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #어묵배추무침
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵배추무침 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe9.jpg" alt="레시피 사진 9">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #모듬전찌개</p>
+                                <p class="slide_desc">
+                                    금복엄마의 모듬전찌개 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                    <li class="recipe_slide">
+                        <a href="#">
+                            <div class="slide_img">
+                                <img src="img/recipe10.jpg" alt="레시피 사진 10">
+                            </div><!-- slide_img -->
+                            <div class="slide_txt">
+                                <p class="slide_hashtag">
+                                    #어묵 #어묵요리 #어묵레시피 #어묵전 #전
+                                </p>
+                                <p class="slide_desc">
+                                    금복엄마의 어묵전 레시피
+                                </p>
+                            </div><!-- slide_txt -->
+                        </a>
+                    </li><!-- recipe_slide -->
+                </ul><!-- recipe_wrap -->
+            </section><!-- recipe -->
+            <section id="award">
+                <div class="inner">
+                    <div class="award_tit">
+                        <h2>레시피 공모전</h2>
+                    </div><!-- award_tit -->
+                    <div class="award_cont clearfix">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="award_img">
+                                        <img src="img/award1.jpg" alt="공모전 사진1">
+                                    </div>
+                                    <div class="award_text">
+                                        <p class="at_title">[수상작 발표] 삼진어묵 깐깐한 어묵 요리 레시피 공모전 수상작 발표</p>
+                                        <p class="at_desc">안녕하세요, 삼진식품(주) 홍보팀 이혜인입니다. 삼진어묵 깐깐한 어묵 요리 레시피 공모전은 출품작 수,
+                                            302개로
+                                            마무리 하였습니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="award_img">
+                                        <img src="img/award2.jpg" alt="공모전 사진2">
+                                    </div>
+                                    <div class="award_text">
+                                        <p class="at_title">초간단 어묵 스프카레</p>
+                                        <p class="at_desc">
+                                            https://www.instagram.com/p/CPPOnXKl1Sl/?utm_medium=copy_link</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="award_img">
+                                        <img src="img/award3.jpg" alt="공모전 사진3">
+                                    </div>
+                                    <div class="award_text">
+                                        <p class="at_title">2021 삼진어묵 깐깐한 어묵 요리 레시피 공모전 접수 마감 안내</p>
+                                        <p class="at_desc">
+                                            2021 삼진어묵 깐깐한 어묵 요리 레시피 공모전에 접수해주신 많은 분들께 감사드립니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="award_img">
+                                        <img src="img/award4.jpg" alt="공모전 사진4">
+                                    </div>
+                                    <div class="award_text">
+                                        <p class="at_title">마파어묵</p>
+                                        <p class="at_desc">[삼진어묵이 들어간 마파어묵]
+                                            https://www.instagram.com/p/CPQpUtmldA_/?utm_medium=copy_link</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- award_cont -->
+                </div><!-- inner -->
+            </section><!-- award -->
+            <section id="member">
+                <h2 class="ir_su">가입멤버 별 혜택안내</h2>
+                <div class="inner">
+                    <div class="member_benefit clearfix">
+                        <dl>
+                            <dt>회원가입 시 마일리지 혜택</dt>
+                            <dd>신규 회원 가입 시 2,000원 마일리지가 지급됩니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>3만원 이상 무료배송</dt>
+                            <dd>3만원 이상 무제한 무료배송 합니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>금액대별 회원 혜택</dt>
+                            <dd>구매 금액대별 혜택을 드리는 회원제도</dd>
+                        </dl>
+                    </div>
+                </div><!-- member_benefit -->
+            </section><!-- member -->
+            <section id="store">
+                <h2 class="ir_su">삼진어묵 매장찾기 및 안내</h2>
+                <div class="inner">
+                    <div class="store_cont">
+                        <ul class="clearfix">
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="store_img">
+                                        <img src="img/store1.jpg" alt="매장 사진 1">
+                                    </div>
+                                    <div class="store_text">
+                                        <div class="st_title">
+                                            가까운 매장 찾기
+                                        </div>
+                                        <div class="st_desc">
+                                            우리동네에서 가까운 <br>
+                                            삼진어묵 매장을 찾아보세요
+                                        </div>
+                                        <span class="mark">STORE</span>
+                                    </div><!-- store_text -->
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="store_img">
+                                        <img src="img/store2.jpg" alt="매장 사진 2">
+                                    </div>
+                                    <div class="store_text">
+                                        <div class="st_title">
+                                            체험·역사관 예약
+                                        </div>
+                                        <div class="st_desc">
+                                            삼진어묵 역사관 방문과 <br>
+                                            어묵 만들기를 체험해보세요!
+                                        </div>
+                                        <span class="mark">RESERVATION</span>
+                                    </div><!-- store_text -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- store_cont -->
+                </div><!-- inner -->
+            </section><!-- store -->
+        </main>
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_top">
+                    <ul class="clearfix">
+                        <li>
+                            <h3>고객센터</h3>
+                            <a href="#" class="call">051-412-5468</a>
+                            <p>문자상담 <span class="call num">1644-1953</span></p>
+                            <span class="ft_desc">09:00 ~ 18:00 평일운영</span>
+                            <p><em>KCP구매안전(에스크로) 서비스</em></p>
+                            <a href="#" class="check">서비스 가입사실 확인<i class="bi bi-chevron-right"></i></a>
+                            <div class="cs">
+                                <a href="#">1:1 문의하기 <i class="bi bi-chevron-right"></i></a>
+                                <a href="#">FAQ 바로가기 <i class="bi bi-chevron-right"></i></a>
+                            </div><!-- cs cs1 -->
+                        </li>
+                        <li class="money">
+                            <h3>입금계좌</h3>
+                            <span class="ft_desc">무통장 입금 시 확인해주세요.</span>
+                            <span class="call">322-910082-65305</span>
+                            <p><em>하나은행 | 예금주 : 삼진식품(주)</em></p>
+                            <a href="#" class="money-check">입금자 확인하기 <i class="bi bi-chevron-right"></i></a>
+                            <div class="money_img">
+                                <img src="img/footer1.png">
+                                <img src="img/footer2.png">
+                            </div>
+                        </li>
+                        <li class="news">
+                            <h3>공지사항</h3>
+                            <ul>
+                                <li><a href="#"><em>[삼일절 배송안내]</em><span class="date">2023.02.23</span></a></li>
+                                <li><a href="#"><em>[전 상품 일시품절 안내]</em><span class="date">2023.02.23</span></a></li>
+                                <li><a href="#"><em>[2023 설날 연휴 배송안내]</em><span class="date">2023.02.23</span>
+                                        <span class="notice">공지</span></a>
+
+                                </li>
+                                <li><a href="#"><em>[폭설로 인한 일부 지역 집화금지 안내] (정상집화)</em>
+                                        <span class="date">2023.02.23</span></a>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn_more">+</a>
+                        </li>
+                    </ul>
+                </div><!-- footer_top -->
+            </div><!-- inner -->
+            <div class="footer_bottom">
+                <div class="inner">
+                    <div class="fb_top">
+                        <div class="fb_top-company">
+                            <ul class="clearfix">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">체험·역사관</a></li>
+                                <li><a href="#">삼진어묵탕</a></li>
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">이메일 무단수집 거부</a></li>
+                                <div class="fb_top-sns">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><i class="bi bi-bootstrap"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                                    </ul>
+                                </div><!-- fb_top-sns -->
+                                <div class="family">
+                                    <ul class="clearfix">
+                                        <li><a href="#">Family Site <i class="bi bi-arrow-up"></i></a>
+                                            <ul>
+                                                <li><a href="#">사업자 전용</a></li>
+                                                <li><a href="#">체험·역사관</a></li>
+                                                <li><a href="#">삼진어묵당</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- family -->
+                            </ul>
+
+                        </div><!-- fb_top_company -->
+
+                    </div><!-- fb_top-->
+
+                </div><!-- inner -->
+
+                <div class="fb_middle">
+                    <div class="inner">
+                        <p>
+                            <span>상호명 : 삼진식품(주)</span>
+                            <span>대표 : 박용준</span>
+                            <span class="address">부산광역시 영도구 태종로99번길 36</span>
+                        </p>
+                        <p>
+                            <span>전화번호 : 051-412-5468</span>
+                            <span>팩스번호 : 051-980-5468</span>
+                            <span>문자상담 : 1644-1953</span>
+                            <span>메일 : samjinorder@daum.net</span>
+                        </p>
+                        <p>
+                            <span>사업자등록번호 : 360-86-00207</span>
+                            <span>통신판매업신고번호 : 제2016-부산영도-00107호</span>
+                            <span>개인정보관리책임자 : 최문수</span>
+                        </p>
+                        <div class="fb_middle-logo">
+                            <figure>
+                                <img src="img/footer_logo.png" alt="삼진어묵 로고">
+                            </figure>
+                        </div>
+                    </div><!-- inner -->
+                </div><!-- fb_middle -->
+                <div class="fb_bottom">
+                    <div class="inner">
+                        <p class="copy">Copyright &copy; samjinfood.com All right reserved.</p>
+                    </div>
+                </div><!-- fb_bottom -->
+            </div><!-- footer_bottom -->
+        </footer><!-- footer -->
+        <div class="side_wrap">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">찜 리스트</a></li>
+                    <li><a href="#">베스트 후기</a></li>
+                    <li><a href="#" class="recent">최근본상품(0)</a></li>
+                    <li><a href="#" class="top">TOP</a></li>
+                </ul>
+            </div>
+        </div><!-- side_wrap -->
+    </div><!-- wrap -->
+
+</body>
+
+</html>
