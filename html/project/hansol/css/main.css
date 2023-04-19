@@ -210,13 +210,11 @@ body {
 #mainBanner .swiper-pagination {
     position: absolute;
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 100px;
+    bottom: 50px;
 }
 
 .swiper-pagination-bullet {
-    background-color: #fff;
+    background-color: #000;
     width: 10px;
     height: 10px;
 }

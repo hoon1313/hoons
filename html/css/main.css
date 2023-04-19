@@ -515,13 +515,14 @@ section {
 #design .design_contents ul {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 
 }
 
 #design .design_contents ul li {
-    margin-bottom: 100px;
+    margin: 0 15px 100px 15px;
+    cursor: pointer;
 }
 
 #design .design_contents ul li:hover .design_desc {
@@ -529,28 +530,49 @@ section {
 }
 
 #design .design_contents ul li .frame {
-    box-shadow: 5px 5px 10px #444;
-    width: 600px;
-    height: 300px;
+    box-shadow: 5px 5px 5px #444;
+    width: 400px;
+    height: 350px;
     overflow: hidden;
     position: relative;
     margin-bottom: 15px;
 }
 
-#design .design_contents ul li .frame:hover .longimg {
-    height: auto;
-    -webkit-animation: design 8s ease;
-    animation: design 3s ease;
+#design .design_contents ul li.thumbnail .frame {
+    width: 400px;
+    height: 220px;
 }
 
 #design .design_contents ul li img {
     display: block;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0%;
-    position: absolute;
+    height: 100%;
     width: 100%;
+}
+
+@media (max-width : 400px) {
+    #design .design_contents ul li .frame {
+        width: 200px;
+
+    }
+
+    #design .design_contents .design_desc {
+        font-size: 1rem;
+        padding-left: 6px;
+    }
+
+    #design .design_desc:before {
+        top: 7px;
+        width: 3px;
+        height: 3px;
+    }
+
+    #design .design_contents ul li {
+        margin: 0 15px 50px 15px;
+    }
+
+    #design .design_contents ul li .frame {
+        height: 200px;
+    }
 }
 
 @-webkit-keyframes design {

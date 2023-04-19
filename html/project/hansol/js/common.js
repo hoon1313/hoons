@@ -3,7 +3,6 @@ $(document).ready(function () { // 문서준비 이벤트 시작
     AOS.init();
 
     var mb = new Swiper(".mb", {
-        direction: "vertical",
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
