@@ -639,25 +639,6 @@ section {
     justify-content: center;
 }
 
-/* #about .about_img {
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    border-radius: 50%;
-    display: block;
-    background: url("../img/emoji.png") no-repeat top center;
-    border: 1px solid #fff;
-    background-size: cover;
-    transition: transform 1s;
-} */
-
-#about .about_img:hover {
-    transform: rotateY(180deg);
-}
-
-#about .about_img img {
-    width: 100%;
-}
 
 #about .about_title {
     margin-bottom: 50px;
@@ -667,6 +648,11 @@ section {
 
 #about .about_info {
     color: #fff;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #about .about_info ul {
